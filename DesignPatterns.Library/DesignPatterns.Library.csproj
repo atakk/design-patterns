@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8658D32E-360C-45A3-A93B-F5981D976001}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatterns.Library</RootNamespace>
+    <AssemblyName>DesignPatterns.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="0-Creational\Builder.cs" />
+    <Compile Include="0-Creational\FactoryMethod.cs" />
+    <Compile Include="0-Creational\ObjectPool.cs" />
+    <Compile Include="0-Creational\Prototype.cs" />
+    <Compile Include="0-Creational\AbstractFactory.cs" />
+    <Compile Include="0-Creational\Singleton.cs" />
+    <Compile Include="1-Structural\Proxy.cs" />
+    <Compile Include="1-Structural\PrivateClassData.cs" />
+    <Compile Include="1-Structural\Flyweight.cs" />
+    <Compile Include="1-Structural\Facade.cs" />
+    <Compile Include="1-Structural\Decorator.cs" />
+    <Compile Include="1-Structural\Composite.cs" />
+    <Compile Include="1-Structural\Bridge.cs" />
+    <Compile Include="1-Structural\Adapter.cs" />
+    <Compile Include="2-Behavioral\Command.cs" />
+    <Compile Include="2-Behavioral\Interpreter.cs" />
+    <Compile Include="2-Behavioral\Iterator.cs" />
+    <Compile Include="2-Behavioral\Mediator.cs" />
+    <Compile Include="2-Behavioral\Memento.cs" />
+    <Compile Include="2-Behavioral\NullObject.cs" />
+    <Compile Include="2-Behavioral\Observer.cs" />
+    <Compile Include="2-Behavioral\State.cs" />
+    <Compile Include="2-Behavioral\Strategy.cs" />
+    <Compile Include="2-Behavioral\Visitor.cs" />
+    <Compile Include="2-Behavioral\TemplateMethod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
