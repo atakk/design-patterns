@@ -1,5 +1,5 @@
 ﻿using DesignPatterns.Library;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +7,10 @@ using System.Text;
 
 namespace DesignPatterns.UnitTest.Creational
 {
-    [TestClass]
+    [TestFixture]
     public class SingletonTest
     {
-        [TestMethod]
+        [Test]
         public void NotNullTest()
         {
             Singleton singleton = Singleton.GetInstance();
@@ -18,7 +18,7 @@ namespace DesignPatterns.UnitTest.Creational
             Assert.IsNotNull(singleton);
         }
 
-        [TestMethod]
+        [Test]
         public void GetTwoInstancesTest()
         {
             Singleton singleton1 = Singleton.GetInstance();

@@ -11,8 +11,13 @@ For more info about design patterns visit [SourceMaking](https://sourcemaking.co
 Change Log
 ----------
 
+Version 0.0.2 - "Atakk" - May 28th 2017
+
+* Abstract Factory
+
 Version 0.0.1 - "Atakk" - May 28th 2017
 
 New features:
 
 * Project Creation
+* Singleton
