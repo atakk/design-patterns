@@ -11,7 +11,11 @@ For more info about design patterns visit [SourceMaking](https://sourcemaking.co
 Change Log
 ----------
 
-Version 0.0.2 - "Atakk" - May 28th 2017
+Version 0.0.3 - "Atakk" - June 5th 2017
+
+* Builder
+
+Version 0.0.2 - "Atakk" - May 31th 2017
 
 * Abstract Factory
 
